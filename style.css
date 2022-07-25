@@ -1,5 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+/* reseting browser's default styles */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* main styles */
 
 body {
   font-family: Poppins, sans-serif;
+}
+
+/* navigation bar */
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  width: 85vw;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+#heading {
+  font-weight: 700;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50vw;
+  font-weight: 500;
+}
+
+.nav-btn {
+  padding: 0 5px;
+  border-radius: 2px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.nav-btn:hover {
+  cursor: pointer;
+  background-color: #b5d9d2;
+  opacity: 0.8;
+}
+
+@media (max-width: 1100px) {
+  .navigation-bar {
+    flex-direction: column;
+  }
+  #heading {
+    margin-bottom: 1.5rem;
+  }
+  .nav-btns {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-btns {
+    flex-direction: column;
+  }
 }
