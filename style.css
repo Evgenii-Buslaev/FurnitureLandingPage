@@ -58,6 +58,7 @@ body {
 
 #heading {
   font-weight: 700;
+  font-size: 2rem;
 }
 
 .nav-btns {
@@ -104,7 +105,7 @@ body {
 
 /* main information bar */
 
-.main-card {
+.card {
   display: flex;
   margin: 2rem auto;
   padding: 3rem 10%;
@@ -124,6 +125,11 @@ body {
 
 .main-heading {
   font-size: 70px;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 50px;
   font-weight: 600;
 }
 
@@ -167,9 +173,37 @@ body {
   bottom: 200px;
 }
 
+/* advantages block */
+
+.medal {
+  background-color: #2a7361;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
+.medal img {
+  width: 20px;
+}
+
+.flexed-advantages {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.advantage-row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 @media (max-width: 2000px) {
   .main-heading {
     font-size: 50px;
+  }
+  .sub-heading {
+    font-size: 30px;
   }
 }
 
@@ -199,16 +233,25 @@ body {
   .main-heading {
     font-size: 40px;
   }
+  .sub-heading {
+    font-size: 20px;
+  }
   .information-btn {
     width: 200px;
   }
   .information-btn a {
     font-size: 20px;
   }
+  .medal {
+    padding: 0.25rem 0.5rem;
+  }
+  .medal img {
+    width: 15px;
+  }
 }
 
 @media (max-width: 1100px) {
-  .main-card {
+  .card {
     flex-direction: column;
   }
   .images {
@@ -220,6 +263,15 @@ body {
   #third-img {
     bottom: 150px;
   }
+  .advantages {
+    margin-top: 20px;
+  }
+  .flexed-advantages {
+    margin: 0;
+  }
+  .information-btn {
+    padding: 0.75rem 1rem;
+  }
 }
 
 @media (max-width: 470px) {
@@ -229,6 +281,9 @@ body {
   }
   .main-heading {
     font-size: 30px;
+  }
+  .sub-heading {
+    font-size: 15px;
   }
   .information-btn {
     width: 150px;
@@ -253,6 +308,9 @@ body {
 @media (max-width: 350px) {
   .main-heading {
     font-size: 20px;
+  }
+  .sub-heading {
+    font-size: 15px;
   }
   .images-container {
     margin-top: 100px;
