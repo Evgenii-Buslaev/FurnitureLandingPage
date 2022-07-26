@@ -460,6 +460,11 @@ label[for="message"] {
   transition-duration: 0.5s;
 }
 
+.submit-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 @media (max-width: 870px) {
   #name,
   #contact_number,

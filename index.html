@@ -140,5 +140,13 @@
         </form>
       </div>
     </footer>
+    <script>
+      document.querySelector(".form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        document
+          .querySelector(".navigation-bar")
+          .scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
