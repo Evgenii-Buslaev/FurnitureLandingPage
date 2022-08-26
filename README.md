@@ -1,1 +1,16 @@
-Hello there! This is just a layout landing page. It hasn't got any functional. I made this page just to show my HTML and CSS skills. The layout design has been taken from Figma.
+# Landing Page
+
+## Desctiption
+
+This is a simple responsive landing page. Target of this project is showing my layout making skills. The maket was taken from Figma.
+
+- #### Technologies
+  - HTML
+  - CSS
+  - Figma
+  - Pure JavaScript
+
+* #### Deployment
+  You can check the page out by the following link: https://evgenii-buslaev.github.io/FurnitureLandingPage/
+
+Thank you!
